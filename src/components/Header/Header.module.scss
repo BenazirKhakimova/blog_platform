@@ -1,0 +1,66 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixin.scss';
+
+.header {
+    &__wrapper {
+        height: 80px;
+        background-color: $background-color-base;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 22px;
+    }
+    &__heading {
+        font-family: $font-family;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: $font-weight;
+        color: $heading-color;
+    }
+    &__btn {
+        height: 51px;
+        width: 109px;
+        border: none;
+        border-radius: 5px;
+        border-radius: nullpx;
+        background-color: $background-color-base;
+        font-family: $font-family;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: $font-weight;
+        color: $heading-color;
+        cursor: pointer;
+        margin-left: 20px;
+
+        &_success {
+            border: 1px solid $success-color;
+            color: $success-color;
+        }
+        &_logOut {
+            border: 1px solid $text-color;
+            color: $text-color;
+        }
+    }
+}
+.auth {
+    display: flex;
+    align-items: center;
+    &__user {
+        @include user;
+    }
+    &__userName {
+        @include username;
+    }
+    &__avatar {
+        @include avatar;
+    }
+}
+.createArticle {
+    width: 112.23px;
+    height: 31.1px;
+    border: 1px solid $success-color;
+    border-radius: 5px;
+    color: $success-color;
+    background-color: $background-color-base;
+    margin: 20px;
+}
